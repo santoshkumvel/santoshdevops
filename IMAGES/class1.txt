@@ -1,0 +1,49 @@
+
+dev--- vcs----build---deploy
+
+vcs----- github/bitbucket/svn/azure repo/codecommit/gitlab
+
+build---- ci/cd ---- jenkins/codepipeline/build pipeline/bamboo/circle ci/teamcity
+
+dev--- github/bitbucket/svn/azure---jenkins
+
+jenkins,bamboo/circle/teamcity=== thirdparty
+codepipeline==== aws
+build pipeline==== azure devops
+
+deploy--- cd ---- docker/kubernetes/ecs/eks/acs/aks 
+
+artifactory---------jfrog/aws artifactory/azure artifactory
+
+docker/k8s===== thirdparty===== master node and worker node 
+ecs/eks---------aws=== master node takecare by aws worker node workon this
+acs/aks------ azure====master node takecare by aws worker node workon this
+
+azure devops
+
+buildpipleline----------code import (bitbucket) ---- add tasks 0r create the yaml script--- build success in case fial then ====using artifactory
+release pipeline------- build pipleline for releasing---- import the artifactory file-- we can do the release
+
+
+service connection--- for connection to the tools
+
+new servi--- service connection----bitbucet --- give the credentials--- build pipeline
+
+account creation
+
+vm--- azure in-------gui---or --- cli----or automation like terraform or arm
+
+azure portal------- aks -----gui--- cluster details--
+azure devops----servivceconnet----aks details
+
+automation tools
+
+terraform -------- thiredpary---- aws/azure/gcp/idmcluf---- cloud providers
+cloudformation----- aws
+azure resource manager---azure
+
+
+
+
+
+

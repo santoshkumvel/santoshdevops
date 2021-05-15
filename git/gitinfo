@@ -1,0 +1,42 @@
+
+
+
+git and github indetail information
+
+
+https://www.decodingdevops.com/how-to-git-clone-git-clone-remote-repository/
+
+
+git init
+git config --global user.email "fljfjd"
+git config --global user.name "djlkfdj"
+git status
+mkdir ajay
+cd ajay
+touch ajyfile
+git status
+git add .
+git commit -m "save the files"
+git remote add origin url
+git remote -v
+git push
+
+
+default branch---- master
+
+git branch branchname------ create the branch
+git branch dev---------- ex:
+git checkout dev--------- default is master------now dev
+git branch--------- no of branches--- its shows the current branch
+
+git branch dev
+git branch
+git remote add origin url 
+
+new branch---- git push -u origin dev or git push --set-upstream origin dev
+git push--- its already existed in git remote repository
+
+
+
+
+
